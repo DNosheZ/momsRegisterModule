@@ -1,0 +1,23 @@
+:root{
+    --first-green:#52b69a;
+    --second-green:#76c893;
+    --third-green:#99d98c;
+    --fourth-green:#b5e48c;
+    --white:#d9ed92;
+}
+body{
+    background-color: var(--second-green);
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: var(--first-green);
+    height: 10vh;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.form-container{
+    /*center horizontaly*/
+}
