@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPLR - Registro de salas</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesRegistro.css">
     <link rel="icon" href="/images/nurse-avatar.ico">
     
 </head>
@@ -20,15 +21,35 @@
     </header>
     <main>
         <div class="form-container">
-            <form id="menuForm">
-                <button type="submit" class="submit-btn" name="action" value="view">Visualizar pacientes</button>
-            </form>
+            <div id="selection-of-service">
+                <form id="selecService">
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" name="action" value="5N">5N</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" name="action" value="7N">7N</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" name="action" value="6S">6S</button>
+                    </div>
+                </form>
+            </div>
+            <div id="service-register" >
+                <h1>Aqui se registran las camas del servicio</h1>
+                <form>
+                    <div id="beds">
+                        <!-- Aquí se colocarán los campos a llenar -->
+                    </div>
+                    <button type="submit" class="submit-btn" name="action" value="save-room">Guardar sala</button>
+                    <button type="submit" class="submit-btn" name="action" value="save-&-close-room">Guardar y cerrar sala</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
         
     </footer>
     <script src="/scripts/scriptOut.js"></script>
-    <script src="/scripts/scriptMenu.js"></script>
+    <script src="/scripts/scriptRegistro.js"></script>
 </body>
 </html>
